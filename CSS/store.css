@@ -1,3 +1,6 @@
+@charset "utf-8";
+/* CSS Document */
+
 body {
 	font-family:"Arial", sans-serif;
     margin: 0;
@@ -35,27 +38,10 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Banner */
-header {
-    text-align: center;
-    padding: 50px;
-    background-color: #f2f2f2;
-}
-
-header h1 {
-    font-size: 2em;
-}
-
-header p {
-    font-size: 1.2em;
-    color: #555;
-}
-
-/* Featured Products */
-#featured-products {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+/* Product Grid Styles */
+#product-grid {
+    display: grid;
+    grid-gap: 20px; /* Gap between grid items */
     padding: 20px;
 }
 
@@ -84,12 +70,4 @@ header p {
 
 .product-container button:hover {
     background-color: #555;
-}
-
-/* Footer Styles */
-footer {
-    text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
 }
