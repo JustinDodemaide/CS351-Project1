@@ -1,4 +1,11 @@
 // JavaScript Document
+function checkIfSignedIn(){
+	var user = JSON.parse(sessionStorage.getItem('currentUser'))
+	if(user != null){
+		document.location.href = 'viewAccount.html';
+	}
+}
+
 function attemptLogin(){
 	event.preventDefault();
 	var username = document.getElementById('username').value
@@ -18,14 +25,3 @@ function attemptLogin(){
 		document.getElementById('error-message').style.display = 'block';
 	}
 }
-
-/*
-	if(accounts == null){
-		accounts = []
-	}
-	accounts.push({ username, password })
-	for(let i in accounts){
-		document.writeln("<h1>" + JSON.stringify(accounts) + "</h1>")
-	}
-    sessionStorage.setItem('accounts', JSON.stringify(accounts));
-*/

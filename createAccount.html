@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <title>Home</title>
     <link rel="stylesheet" href="CSS/createAccount.css" />
-    <script src="./script.js"></script>
+    <script src="./Scripts/createAccount.js"></script>
 </head><!-- InstanceBegin template="/Templates/contentpage.dwt" codeOutsideHTMLIsLocked="false" -->
 <body>
     <!-- Navigation bar -->
@@ -39,7 +39,8 @@
 				<label for="email">Email</label><br>
 				<input type="text" id="phone" name="phone"><br>
 				<label for="phone">Phone</label><br>
-				<input type="submit" id="submitbutton" value="Create Account" align="center">
+				<div id="error-message" style="display: none; color: red;">Unable to make account</div>
+				<input type="submit" id="submitbutton" value="Create Account" align="center" onClick="attemptToMakeAccount()">
 			</form>
 		</div>
 	</section>
