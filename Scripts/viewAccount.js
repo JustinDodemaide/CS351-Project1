@@ -15,7 +15,6 @@ function loadDetails(){
 }
 
 function logout(){
-	//document.writeln("<h1>logging out</h1>");
 	sessionStorage.setItem('currentUser',null)
 	document.location.href = 'account.html';
 }
