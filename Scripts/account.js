@@ -13,6 +13,7 @@ function attemptLogin(){
 	
 	let accounts = JSON.parse(sessionStorage.getItem('accounts'))
 	if(accounts == null){
+		document.getElementById('error-message').style.display = 'block';
 		return
 	}
 	let foundAccount = accounts.find(account => account.username === username && account.password === password)
