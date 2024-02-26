@@ -8,13 +8,11 @@ function attemptLogin(){
 	if(accounts == null){
 		return
 	}
-	let found = false
-	if(accounts.find(account => account.username === username && account.password === password)){
-		found = true
-	}
-	
-	if(found){
-		document.location.href = 'home.html';
+	let foundAccount = accounts.find(account => account.username === username && account.password === password)
+
+	if(foundAccount != null){
+		sessionStorage.setItem('currentUser', JSON.stringify(foundAccount));
+		document.location.href = 'viewAccount.html';
 	}
 	else{
 		document.getElementById('error-message').style.display = 'block';
