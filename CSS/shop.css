@@ -1,13 +1,5 @@
-@charset "utf-8";
-/* CSS Document */
-
-body {
-	font-family:"Arial", sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
 /* Navbar */
+
 nav {
     background-color: #333;
     color: #fff;
@@ -38,36 +30,47 @@ nav ul li a:hover {
     background-color: #555;
 }
 
-/* Product Grid Styles */
-#product-grid {
-    display: grid;
-    grid-gap: 20px; /* Gap between grid items */
+
+/* Product Grid */
+.container-fluid {
     padding: 20px;
 }
 
-.product-container button {
-	text-align: center;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 20px 20px;
-    cursor: pointer;
+.product-container {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 20px;
 }
 
-.product-container button img {
-    width: 100%;
-    height: auto;
+.product-container img {
+    max-width: 100%;
+    width: auto;
 }
 
-.product-container button h2 {
+.product-container h2 {
+    font-size: 1.2em;
     margin-top: 10px;
 }
 
-.product-container button p {
+.product-container p {
     font-size: 1.1em;
     color: #888;
+    margin-bottom: 10px;
 }
 
-.product-container button:hover {
+.product-container a{
+	display: block;
+    padding: 8px;
+    color: #fff;
+	background-color: #333;
+    text-decoration: none;
+	text-align: center;
+    cursor: pointer;
+    border-radius: 5px; 
+}
+
+.product-container a:hover {
     background-color: #555;
 }

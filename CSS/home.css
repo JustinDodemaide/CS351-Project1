@@ -42,8 +42,11 @@ header {
     background-color: #f2f2f2;
 }
 
-header h1 {
-    font-size: 2em;
+#welcome{
+	font-family:"Arial", sans-serif;
+	font-weight: bold;
+    font-size: 3em;
+    color: #333;
 }
 
 header p {
@@ -59,32 +62,42 @@ header p {
     padding: 20px;
 }
 
-.product-container button {
-	text-align: center;
-    background-color: #333;
-    color: #fff;
-    border: none;
-    padding: 20px 20px;
-    cursor: pointer;
+.product-container {
+    color: #555;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
-.product-container button img {
-    width: 100%;
-    height: auto;
+
+
+.product-container img {
+	width:150px;
 }
 
-.product-container button h2 {
+.product-container h2 {
     margin-top: 10px;
 }
 
-.product-container button p {
+.product-container p {
     font-size: 1.1em;
     color: #888;
 }
 
-.product-container button:hover {
+.product-container a{
+	display: block;
+    padding: 8px;
+    color: #fff;
+	background-color: #333;
+    text-decoration: none;
+	text-align: center;
+    cursor: pointer;
+}
+
+.product-container a:hover {
     background-color: #555;
 }
+
 
 /* Footer Styles */
 footer {
