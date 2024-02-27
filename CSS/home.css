@@ -55,6 +55,14 @@ header p {
 }
 
 /* Featured Products */
+#featured{
+    text-align: center;
+	justify-content: center;
+    font-size: 1.2em;
+    color: #555;
+	
+}
+
 #featured-products {
     display: flex;
     justify-content: space-evenly;
@@ -68,8 +76,6 @@ header p {
     margin-bottom: 20px;
     border-radius: 10px;
 }
-
-
 
 .product-container img {
 	width:150px;
