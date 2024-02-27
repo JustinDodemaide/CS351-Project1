@@ -1,6 +1,4 @@
 // JavaScript Document
-//https://stackoverflow.com/questions/1829925/javascript-getelementbyid-not-working
-//https://developer.mozilla.org/en-US/docs/Web/API/Document/DOMContentLoaded_event
 //street, city, state, zip, email, phone
 function loadDetails(){
 	var user = JSON.parse(sessionStorage.getItem('currentUser'))

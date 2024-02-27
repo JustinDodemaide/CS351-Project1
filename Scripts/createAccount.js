@@ -5,7 +5,6 @@ function attemptToMakeAccount(){
 	var username = document.getElementById('username').value
 	if(usernameIsTaken(username)){
 		document.getElementById('error-message').style.display = 'block'
-		document.writeln("<h1>username taken</h1>");
 		return
 	}
 	
@@ -15,7 +14,6 @@ function attemptToMakeAccount(){
 	if(street != ""){
 		if(containsNumber(street)){
 			document.getElementById('error-message').style.display = 'block'
-			document.writeln("<h1>street problem</h1>");
 			return
 		}
 	}
@@ -24,7 +22,6 @@ function attemptToMakeAccount(){
 	if(city != ""){
 		if(containsNumber(city)){
 			document.getElementById('error-message').style.display = 'block'
-			document.writeln("<h1>city problem</h1>");
 			return
 		}
 	}
@@ -33,7 +30,6 @@ function attemptToMakeAccount(){
 	if(state != ""){
 		if(containsNumber(state)){
 			document.getElementById('error-message').style.display = 'block'
-			document.writeln("<h1>state problem</h1>");
 			return
 		}
 	}
@@ -42,7 +38,6 @@ function attemptToMakeAccount(){
 	if(zip != ""){
 		if(zip.length != 5 || !containsNumber(zip)){
 			document.getElementById('error-message').style.display = 'block'
-			document.writeln("<h1>zip problem</h1>");
 			return
 		}
 	}
@@ -53,7 +48,6 @@ function attemptToMakeAccount(){
 	if(phone != ""){
 		if(phone.length != 10 || !containsNumber(phone)){
 			document.getElementById('error-message').style.display = 'block'
-			document.writeln("<h1>phone problem</h1>");
 			return
 		}
 	}
