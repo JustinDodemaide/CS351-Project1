@@ -1,12 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="path/to/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="CSS/account.css" />
-    <script src="./script.js"></script>
+    <link rel="stylesheet" href="CSS/account.css">
 </head>
 <!-- InstanceBegin template="/Templates/contentpage.dwt" codeOutsideHTMLIsLocked="false" -->
 <body>
@@ -41,7 +41,7 @@
 				<input type="text" id="password" name="password"><br>
 				<label for="password">Password</label><br>
 	    		<div id="error-message" style="display: none; color: red;">User not found</div>
-				<input type="submit" id="submitbutton" value="Submit" align="center" onClick="attemptLogin()">
+				<input type="submit" id="submitbutton" value="Submit"  onClick="attemptLogin()">
 			</form>
 			<a href="createAccount.html">Make Account</a>
 		</div>
@@ -50,5 +50,6 @@
 	
 </body>
 <!-- InstanceEnd -->
+	<!-- Script is at bottom of page so all elements finish loading before its called -->
 	<script src="Scripts/account.js" onload="checkIfSignedIn();"></script>
 </html>
